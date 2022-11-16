@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;600&display=swap');
+/*  TAGS   */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+h1 {
+    font-size: 120px;
+}
+h2 {
+    font-size: 60px;
+}
+h3 {
+    font-size: 30px;
+}
+p {
+    font-size: 25px;
+}
+a {
+    color: black;
+}
+a:hover{
+    color: #FE3B32;
+}
+button{
+    position: relative;
+    border-radius: 30px;
+    border: none;
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+button:hover{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    height: 50px;
+    top: 0;
+    z-index: 1;
+    background-color: #D9D9D9;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+}
+/*  CLASSES   */
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    margin: 250px 0 250px 0;
+}
+.insurance{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 50px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.insurance:hover{
+    transition: ease-in-out 0.1s;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+}
+.insurance ul{
+    position: relative;
+    inset: 20px 0 0 -20px;
+}
+.insurance li{
+    font-size: 20px;
+    list-style: disc;
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+}
+.background-blue{
+    background-color: #1D2539;
+}
+.question-answer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 580px;
+    height: 150px;
+    background-color: #1D2539;
+    border-radius: 20px;
+    gap: 10px;
+    padding: 50px;
+}
+.question-answer li, .question-answer p{
+    list-style-type: decimal;
+}
+.answer{
+    font-size: 20px;
+    width: 500px;
+}
+.color-white{
+    color: white;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #1D2539;
+    height: 100vh;
+}
+.banner p{
+    margin-top: 25px;
+}
+.nav_anchors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 50px;
+    scroll-behavior: smooth;
+}
+/*  ID's   */
+#main-button {
+    background-color: #FE3B32;
+    margin-top: 40px;
+}
+#insurances {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 100px 0 100px;
+    gap: 80px;
+    height: auto;
+}
+#logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+#logos img{
+    height: 100px;
+    object-fit: cover;
+}
+#faq{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contact-button{
+    margin: 30px 0;
+    width: 240px;
+    padding: 10px;
+    height: 50px;
+    background-color: #FE3B32;
+    font-weight: bold;
+}
+#contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    background-color: #1D2539;
+}
