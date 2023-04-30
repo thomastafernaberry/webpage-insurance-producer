@@ -7,103 +7,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Asegurá tu patrimonio y vida de forma rápida y sencilla. Cotizaciones gratis">
     <title>Document</title>
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- <a href="" ><img class="fixed-logo" src="images/whatsapp-logo.svg" alt="whatsapp-logo"></a> -->
     <nav>
-        <ul class="nav_anchors">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#scroll-seguros">Seguros</a></li>
-            <li><a href="#scroll-aseguradoras">Aseguradoras</a></li>
-            <li><a href="#scroll-preguntas">Preguntas frecuentes</a></li>
-            <li><a href="#scroll-contacto">Contacto</a></li>
+        <div>
+            <h3>Patricia Arguello</h3>
+            <span>Productora de seguros</span>
+        </div>
+        <ul>
+            <li>Inicio</li>
+            <li>Seguros</li>
+            <li>Compañías</li>
+            <li>Contacto</li>
         </ul>
     </nav>
-    <div class="banner color-white">
-        <h1>Asegurá hoy mismo</h1>
-        <p>Y disfrutá del mejor precio. Rápido y fácil</p>
-        <button id="main-button">Enterate más</button>
-    </div>
-    <div class="separator" id="scroll-seguros">
-        <h2>Existen variedad de seguros</h2>
-        <h3 class="padding-top-20px">Encontrá el que se adapte a tus necesidades.</h3>
-    </div>
-    <div id="insurances">
-        <div class="insurance">
-            <h2>Patrimoniales</h2>
-            <ul>
-                <li>Seguro Automotor</li>
-                <li>Seguro integral de comercio</li>
-                <li>Seguro del hogar</li>
-                <li>Responsabilidad civil</li>
-                <li>Combinado familiar</li>
-                <li>Seguro de transporte</li>
-            </ul>
+    <section class="hero">
+        <hgroup>
+            <h1>Asegurá.</h1>
+            <h2>Y disfrutá del mejor precio. Rápido y fácil</h2>
+        </hgroup>
+        <a href="#scroll-seguros"><button>Enterate más</button></a> 
+    </section>
+    </header>
+    <section>
+        <hgroup class="separator" id="scroll-seguros">
+            <h2>Existen variedad de seguros</h2>
+            <h3>Encontrá el que se adapte a tus necesidades.</h3>
+        </hgroup>
+        <div class="insurances">
+            <div>
+                <img src="/images/car-front.svg" alt="" srcset="">
+                <h2>Seguros patrimoniales</h2>
+                <ul>
+                    <li>Seguro automotor</li>
+                    <li>Seguro de bicicletas</li>
+                    <li>Seguro integral de comercio</li>
+                    <li>Seguro para el hogar</li>
+                    <li>Seguro de transporte</li>
+                    <li>Responsabilidad civil profesionales</li>
+                </ul>
+            </div>
+            <div>
+                <img src="/images/heart-pulse.svg" alt="" srcset="">
+                <h2>Seguros de vida</h2>
+                <ul>
+                    <li>Seguro de vida</li>
+                    <li>Seguro de vida con ahorro</li>
+                    <li>Seguro de accidentes personales</li>
+                    <li>Seguro de salud</li>
+                    <li>Seguro de retiro</li>
+                    <li>Seguro mixto</li>
+                    <li>Seguros de sepelio</li>
+                    <li>Seguro escolar</li>
+                </ul>
+            </div>
+            <div>
+                <img src="/images/truck.svg" alt="" srcset="">
+                <h2>Caución</h2>
+                <ul>
+                    <li>Seguro de transporte</li>
+                    <li>Seguro de importación y exportación</li>
+                    <li>Seguro para el personal</li>
+                    <li>Seguro para construcción y montaje</li>
+                </ul>
+            </div>
+            <div>
+                <img src="/images/person-lock.svg" alt="" srcset="">
+                <h2>Obligatorios</h2>
+                <ul>
+                    <li>ART (Riesgos de trabajo)</li>
+                    <li>Seguro de vida obligatorio</li>
+                    <li>Seguro de vida colectivo</li>
+                </ul>
+            </div>
         </div>
-        <div class="insurance">
-            <h2>Vida</h2>
-            <ul>
-                <li>Seguros de vida</li>
-                <li>Seguros de accidentes personales</li>
-                <li>Seguros de salud</li>
-                <li>Responsabilidad civil para profesionales</li>
-                <li>Seguros de retiro</li>
-                <li>Seguros de sepelio</li>
-            </ul>
-        </div>
-    </div>
-    <div class="separator background-blue color-white" id="scroll-aseguradoras">
-        <h2>Trabajo con las compañías más efectivas</h2>
-    </div>
-    <div id="logos">
-        <img src="/images/federacion-patronal.png" alt="logo de federacion patronal seguros">
-        <img src="/images/sancor.png" alt="logo de sancor seguros">
-        <img src="/images/boston.jpg" alt="logo de boston seguros">
-        <img src="/images/hdi.png" alt="logo de hdi seguros">
-        <img src="/images/rivadavia.png" alt="logo de rivadavia seguros">
-        <img src="/images/atm.png" alt="logo de atm seguros">
-        <img src="/images/galeno.png" alt="logo de galeno seguros">
-        <img src="/images/sura.png" alt="logo de sura seguros">
-    </div>
-    <div class="separator" id="scroll-preguntas">
-        <h2>Preguntas frecuentes</h2>
-    </div>
-    <div class="color-white" id="faq">
-        <div class="question-answer">
-            <h3>¿Quién sos?</h3>
+    </section>
+    <section id="preguntas-frecuentes">
+        <hgroup class= "separator" id="scroll-preguntas">
+            <h2>Preguntas frecuentes</h2>
+        </hgroup>
+        <div>
+            <h3>¿Quién soy?</h3>
             <p>Mi nombre es Patricia Arguello y soy una productora de seguros con una muchos años de experiencia en el rubro.</h3>
         </div>
-        <div class="question-answer">
+        <div>
             <h3>¿Qué es una productora de seguros?</h3>
             <p>Una productora de seguros es una intermediaria entre el asegurado y las compañías.</h3>
         </div>
-        <div class="question-answer">
+        <div>
             <h3>¿Por qué elegir una productora de seguros?</h3>
             <p>Porque te brinda asesoramiento, gestión de siniestros y respuestas inmediatas a tus inquietudes.</h3>
         </div>
-        <div class="question-answer">
+        <div>
             <h3>¿Qué hago en caso de siniestro?</h3>
             <ol>
-                <li>Mantener la calma y no retirarse del lugar del accidente.</li>
-                <li>Si hay lesionados, llamar a la ambulancia.</li>
-                <li>Intercambiar datos con el tercero.</li>
-                <li>Sacar fotos en las que se vean los daños y tu patente.</li>
-                <li>Comunicar a tu productora de seguros la ocurrencia del siniestro.</li>
+                <li><p>Mantener la calma y no retirarse del lugar del accidente.<p></li>
+                <li><p>Si hay lesionados, llamar a la ambulancia.</p></li>
+                <li><p>Intercambiar datos con el tercero.</p></li>
+                <li><p>Sacar fotos en las que se vean los daños y tu patente.</p></li>
+                <li><p>Comunicar a tu productora de seguros la ocurrencia del siniestro.</p></li>
             </ol>
         </div>
-    </div>
-    <div class="separator" id="scroll-contacto">
+    </section>
+    <section>
+        <div class="separator background-blue color-white" id="scroll-aseguradoras">
+            <h2>Trabajo con las compañías más efectivas</h2>
+        </div>
+        <div class="logos">
+            <img src="/images/federacion-patronal.png" alt="logo de federacion patronal seguros">
+            <img src="/images/sancor.png" alt="logo de sancor seguros">
+            <img src="/images/boston.jpg" alt="logo de boston seguros">
+            <img src="/images/hdi.png" alt="logo de hdi seguros">
+            <img src="/images/rivadavia.png" alt="logo de rivadavia seguros">
+            <img src="/images/atm.png" alt="logo de atm seguros">
+            <img src="/images/galeno.png" alt="logo de galeno seguros">
+            <img src="/images/sura.png" alt="logo de sura seguros">
+        </div>
+    </section>
+    <!-- <div class="separator" id="scroll-contacto">
         <h2>Contacto</h2>
-    </div>
-    <div class="color-white" id="contact-section">
+    </div> -->
+    <footer>
         <h3>Podés contactarte conmigo a través de los siguientes medios:</h3>
         <p>Celular: +541568683250</p>
         <p>E-Mail: patri_ar06@hotmail.com</p>
-        <div>
-            <button class="contact-button">Enviar Whatsapp</button>
-            <button class="contact-button">Enviar Mail</button>
-        </div>
-    </div>
+    </footer>
+
+    <!-- Keep it last -->
+    <script src="script.js"></script>
 </body>
+
 </html>
