@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;600&display=swap');
 
+/* ------------- Element selectors ----------------- */
+
 *,
 *::after,
 *::before {
@@ -24,40 +26,9 @@ a {
     list-style: none;
     text-decoration: none;
 }
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 3em;
-    position: sticky;
-    width: 100%;
-    height: 5vh;
-    background-color: #EDEDED;
-    inset: 0;
-    margin: auto;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 0 0 20px 20px;
-    z-index: 1;
-    color: #1E1E1E;
-}
-
-nav>ul>li {
-    display: inline;
-    margin-inline: 2em;
-    font-size: 1.3em;
-}
-
-nav>div>p {
-    text-align: center;
-}
-
-.hamburger {
-    background-image: url(/images/list.svg);
-}
 
 h1 {
-    font-size: 6.5em;
+    font-size: 4em;
 }
 
 h2 {
@@ -69,7 +40,7 @@ h3 {
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 a {
@@ -78,6 +49,47 @@ a {
 
 a:hover {
     color: #FE3B32;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 3em;
+    position: sticky;
+    height: 5vh;
+    background-color: #EDEDED;
+    inset: 0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20px 20px;
+    z-index: 1;
+}
+
+nav>ul>li {
+    display: inline;
+    margin-inline: 2em;
+    font-size: 1.3em;
+}
+
+nav>ul>li>a {
+    color: #232323;
+}
+
+nav>ul>li>a:hover {
+    color: #FE3B32;
+    cursor: pointer;
+}
+nav>div {
+    color: #232323;
+}
+
+nav>div>p {
+    text-align: center;
+}
+
+.hamburger {
+    background-image: url(/images/list.svg);
 }
 
 section {
@@ -93,22 +105,6 @@ button {
 
 button:hover {
     cursor: pointer;
-}
-
-.separator {
-    text-align: center;
-    font-size: 2em;
-    margin: 3em 0 3em 0;
-    border-radius: 25px;
-    width: 100%;
-}
-
-.separator .background-blue {
-    padding: 0.5em 1em 0.5em 1em;
-}
-
-.separator>h2 {
-    font-size: clamp(1.3em, 10vw, 2em);
 }
 
 hgroup {
@@ -127,43 +123,65 @@ hgroup>h3 {
     opacity: 0.7;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #232323;
+    padding: 2em;
+    gap: 0.5em;
+    color: #EDEDED;
+}
+
+footer>a {
+    font-size: 1.3em;
+    color: #EDEDED;
+}
+
+/* ------ Class selectors ------- */
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 15em;
     flex-wrap: wrap;
-    gap: 8em;
     background-color: #EDEDED;
-    position: relative;
-    height: 83vh;
+    min-height: 83vh;
+    max-width: 100%;
     margin: 30px;
     border: #232323 solid;
     border-radius: 30px;
     box-shadow: 5px 20px 20px 10px rgba(0, 0, 0, 0.1);
 }
-.hero>hgroup {
-    min-width: max-content;
-}
+
 .hero>hgroup>h1 {
     color: #232323;
+    width: fit-content;
 }
+
 .hero>hgroup>h2 {
-    font-size: 2em;
+    font-size: clamp(1.5em, 100%, 4em);
     color: #1e1e1e81;
 }
 
 .hero>img {
-    width: 35%;
+    max-width: 650px;
+    min-width: 200px;
 }
 
 .hero button {
-    background-color: hsla(3, 99%, 60%, 0.9);;
+    background-color: #EB0C00;
     height: 60px;
     margin-top: 30px;
     width: 250px;
     font-weight: 600;
     font-size: 20px;
     color: #EDEDED;
+}
+
+.hero button:hover {
+    scale: 1.05;
+    transition: ease-in 0.1s;
 }
 
 .insurances {
@@ -203,77 +221,17 @@ hgroup>h3 {
     content: '• ';
 }
 
-.background-blue {
-    background-color: #1D2539;
+.separator {
+    text-align: center;
+    font-size: 2em;
+    margin: 3em 0 3em 0;
+    width: 100%;
 }
 
-#preguntas-frecuentes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1.5em;
+.separator>h2 {
+    font-size: clamp(1.3em, 10vw, 2em);
 }
 
-#preguntas-frecuentes>div {
-    border: 5px solid hsla(0, 0%, 14%, 0.8);
-    padding: 2em;
-    border-radius: 20px;
-    height: fit-content;
-    width: 50%;
-}
-
-#preguntas-frecuentes>div:hover {
-    scale: 1.02;
-    transition: 0.2s;
-    background-color: hsla(3, 99%, 60%, 0.8);
-    color: #EDEDED;
-}
-
-#preguntas-frecuentes>div>ol {
-    padding-left: 1em;
-}
-
-#preguntas-frecuentes>div>p {
-    margin: 1em 0;
-}
-
-#preguntas-frecuentes>div>ol>li {
-    list-style-type: decimal;
-}
-
-.color-#EDEDED {
-    color: #EDEDED;
-}
-
-#banner {
-    background-color: #1D2539;
-    height: 95vh;
-    color: #EDEDED;
-}
-
-#banner>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-}
-
-#banner>div>h2 {
-    font-size: clamp(1em, 10vw, 2em);
-    margin-top: .3em;
-}
-
-.nav_anchors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Urbanist', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    gap: 50px;
-    scroll-behavior: smooth;
-}
 
 .logos {
     display: flex;
@@ -290,15 +248,6 @@ hgroup>h3 {
     object-fit: contain;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #1D2539;
-    padding: 3em;
-    gap: 0.5em;
-    color: #EDEDED;
-}
-
 .fixed-logo {
     position: sticky;
     inset: 0 0 0 100%;
@@ -309,12 +258,72 @@ footer {
     z-index: 2;
 }
 
-@media (max-width: 920px) {
+
+/* -------- ID selectors ----------- */
+
+#preguntas-frecuentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5em;
+}
+
+#preguntas-frecuentes>div {
+    border: solid hsla(0, 0%, 14%, 0.8);
+    padding: 2em;
+    border-radius: 20px;
+    height: fit-content;
+    width: 50%;
+}
+
+#preguntas-frecuentes>div:hover {
+    scale: 1.02;
+    transition: 0.2s;
+    background-color: #EB0C00;
+    color: #EDEDED;
+}
+
+#preguntas-frecuentes>div>ol {
+    padding-left: 1em;
+}
+
+#preguntas-frecuentes>div>p {
+    margin: 1em 0;
+}
+
+#preguntas-frecuentes>div>ol>li {
+    list-style-type: decimal;
+}
+
+
+/*---------------------- Media ----------------------- */
+
+@media (width < 920px) {
     nav {
+        position: relative;
         display: none;
+        height: 10vh;
+        padding: 0;
     }
 
     #preguntas-frecuentes>div {
         width: 100%;
+    }
+
+    .hero {
+        padding-top: 10%;
+        gap: 0;
+        margin: 1em;
+        max-height: 90vh;
+    }
+
+    .hero>hgroup {
+        margin-top: 3em;
+    }
+}
+
+@media (width < 1655px) {
+    .hero {
+        gap: 0;
     }
 }
