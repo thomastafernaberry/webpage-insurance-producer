@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #EDEDED;
+}
+
 body,
 h1,
 h2,
@@ -20,27 +24,32 @@ a {
     list-style: none;
     text-decoration: none;
 }
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 2em;
+    padding: 3em;
     position: sticky;
     width: 100%;
-    height: 8vh;
-    background-color: #1D2539;
-    top: 0;
-    /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.246); */
+    height: 5vh;
+    background-color: #EDEDED;
+    inset: 0;
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 20px 20px;
     z-index: 1;
-    color: white;
+    color: #1E1E1E;
 }
 
-nav > ul > li {
+nav>ul>li {
     display: inline;
     margin-inline: 2em;
     font-size: 1.3em;
+}
+
+nav>div>p {
+    text-align: center;
 }
 
 .hamburger {
@@ -48,15 +57,19 @@ nav > ul > li {
 }
 
 h1 {
-    font-size: clamp(2em, 10vw, 10em);
+    font-size: 6.5em;
 }
 
 h2 {
-    font-size: clamp(10px, 10vw, 2em);
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 p {
-    font-size: clamp(1em, 10%, 1.5em);
+    font-size: 1em;
 }
 
 a {
@@ -68,7 +81,7 @@ a:hover {
 }
 
 section {
-    margin: 10em 1.5em 10em 1.5em;
+    margin: 15em 1.5em 15em 1.5em;
 }
 
 button {
@@ -90,11 +103,11 @@ button:hover {
     width: 100%;
 }
 
-.separator, .background-blue {  
+.separator .background-blue {
     padding: 0.5em 1em 0.5em 1em;
 }
 
-.separator > h2 {
+.separator>h2 {
     font-size: clamp(1.3em, 10vw, 2em);
 }
 
@@ -102,13 +115,13 @@ hgroup {
     text-align: center;
 }
 
-hgroup > h2,
-hgroup > h3,
-hgroup > li {
+hgroup>h2,
+hgroup>h3,
+hgroup>li {
     color: #1E1E1E;
 }
 
-hgroup > h3 {
+hgroup>h3 {
     margin-top: 20px;
     font-size: 0.7em;
     opacity: 0.7;
@@ -116,14 +129,41 @@ hgroup > h3 {
 
 .hero {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8em;
+    background-color: #EDEDED;
+    position: relative;
+    height: 83vh;
+    margin: 30px;
+    border: #232323 solid;
+    border-radius: 30px;
+    box-shadow: 5px 20px 20px 10px rgba(0, 0, 0, 0.1);
 }
-.hero > hgroup {
+.hero>hgroup {
+    min-width: max-content;
+}
+.hero>hgroup>h1 {
+    color: #232323;
+}
+.hero>hgroup>h2 {
+    font-size: 2em;
+    color: #1e1e1e81;
+}
 
-    align-items: n;
+.hero>img {
+    width: 35%;
+}
 
+.hero button {
+    background-color: hsla(3, 99%, 60%, 0.9);;
+    height: 60px;
+    margin-top: 30px;
+    width: 250px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #EDEDED;
 }
 
 .insurances {
@@ -133,31 +173,33 @@ hgroup > h3 {
     gap: 1em;
 }
 
-.insurances > div {
+.insurances>div {
     width: 400px;
     border-radius: 15px;
-    border: 3px solid rgba(0, 0, 0, 0.2);
+    border: hsla(0, 0%, 14%, 0.8) solid;
     box-shadow: 10px 5px 30px rgba(0, 0, 0, 0.05);
     padding: 2em 2em 2em 2em;
 }
 
-.insurances > div:hover {
+.insurances>div:hover {
     transition: ease-in-out 0.1s;
-    box-shadow: 10px 10px 1px rgba(0, 0, 0, 0.2);
-    scale: 1.02;
+    /* box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.1); */
+    scale: 1.03;
 }
-.insurances > div > img {
+
+.insurances>div>img {
     display: flex;
     width: 100%;
     height: 50px;
     justify-content: center;
 }
 
-.insurances > div > h2 {
+.insurances>div>h2 {
     margin: .5em 0 .5em 0;
+    text-align: center;
 }
 
-.insurances > div > ul > li::before {
+.insurances>div>ul>li::before {
     content: '• ';
 }
 
@@ -172,44 +214,44 @@ hgroup > h3 {
     gap: 1.5em;
 }
 
-#preguntas-frecuentes > div {
-    border: 2px #1D2539 solid;
+#preguntas-frecuentes>div {
+    border: 5px solid hsla(0, 0%, 14%, 0.8);
     padding: 2em;
     border-radius: 20px;
     height: fit-content;
-    width: 80%;
+    width: 50%;
 }
 
-#preguntas-frecuentes > div:hover {
+#preguntas-frecuentes>div:hover {
     scale: 1.02;
     transition: 0.2s;
-    background-color: #1D2539;
-    color: white;
+    background-color: hsla(3, 99%, 60%, 0.8);
+    color: #EDEDED;
 }
 
-#preguntas-frecuentes > div > ol {
+#preguntas-frecuentes>div>ol {
     padding-left: 1em;
 }
 
-#preguntas-frecuentes > div > p {
+#preguntas-frecuentes>div>p {
     margin: 1em 0;
 }
 
-#preguntas-frecuentes > div > ol > li {
+#preguntas-frecuentes>div>ol>li {
     list-style-type: decimal;
 }
 
-.color-white {
-    color: white;
+.color-#EDEDED {
+    color: #EDEDED;
 }
 
 #banner {
     background-color: #1D2539;
     height: 95vh;
-    color: white;
+    color: #EDEDED;
 }
 
-#banner > div {
+#banner>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,19 +259,9 @@ hgroup > h3 {
     height: 100%;
 }
 
-#banner > div > h2 {
+#banner>div>h2 {
     font-size: clamp(1em, 10vw, 2em);
     margin-top: .3em;
-}
-
-.hero button {
-    background-color: #FE3B32;
-    height: 50px;
-    margin-top: 30px;
-    width: 200px;
-    font-weight: 600;
-    font-size: 20px;
-    color: white;
 }
 
 .nav_anchors {
@@ -248,10 +280,10 @@ hgroup > h3 {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 10em;
-    
+
 }
 
-.logos > img {
+.logos>img {
     gap: 1em;
     max-height: 100px;
     width: 150px;
@@ -264,7 +296,7 @@ footer {
     background-color: #1D2539;
     padding: 3em;
     gap: 0.5em;
-    color: white;
+    color: #EDEDED;
 }
 
 .fixed-logo {
@@ -277,12 +309,12 @@ footer {
     z-index: 2;
 }
 
-@media (max-width: 920px){
+@media (max-width: 920px) {
     nav {
         display: none;
     }
 
-    #preguntas-frecuentes > div {
+    #preguntas-frecuentes>div {
         width: 100%;
     }
 }
