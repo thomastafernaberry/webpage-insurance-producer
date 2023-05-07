@@ -1,3 +1,4 @@
+const $BODY = document.querySelector('body');
 const $BUTTON = document.querySelector('#main');
 
 function scrollToElement(element) {
@@ -6,9 +7,11 @@ function scrollToElement(element) {
         behavior: 'smooth',
     });
 }
+function getScrollPosition() {
+    return window.scrollY;
+}
 $BUTTON.onclick = function() {
     scrollToElement();
+    console.log(getScrollPosition());
 };
-
-
 
