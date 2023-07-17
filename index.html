@@ -13,16 +13,18 @@
 <body>
     <!-- <a href="" ><img class="fixed-logo" src="images/whatsapp-logo.svg" alt="whatsapp-logo"></a> -->
     <nav>
-        <div>
-            <h3>Patricia Argüello</h3>
-            <p>Productora de seguros</p>
+        <div class="logo">
+            <h4>Patricia Argüello</h4>
+            <h5>Productora de seguros</h5>
         </div>
-        <ul>
-            <li><a id="inicio">Inicio</a></li>
-            <li><a id="seguros">Seguros</a></li>
-            <li><a id="companias">Compañías</a></li>
-            <li><a id="contacto">Contacto</a></li>
+        <ul class="nav-links">
+            <li id="nav-inicio"><a>Inicio</a></li>
+            <li id="nav-seguros"><a>Seguros</a></li>
+            <li id="nav-compañias"><a>Compañías</a></li>
+            <li id="nav-contacto"><a>Contacto</a></li>
         </ul>
+        <button class="burger-menu" type="button"></button>
+        
     </nav>
     <section class="hero">
         <hgroup>
@@ -30,7 +32,7 @@
             <h2>Es rápido y sencillo.</h2>
             <button id="main">Enterate más</button> 
         </hgroup>
-        <img src="images/vecteezy_people-working-at-home-office-and-typing-laptop-online_13166906_952.png" alt="">
+        <!-- <img src="images/vecteezy_people-working-at-home-office-and-typing-laptop-online_13166906_952.png" alt=""> -->
     </section>
     </header>
     <section>
@@ -39,8 +41,8 @@
             <h3>Encontrá el que se adapte a tus necesidades.</h3>
         </hgroup>
         <div class="insurances">
-            <div>
-                <img src="images/car-front.svg" alt="" srcset="">
+            <div class="card">
+                <img class="card-icon" src="images/car-front.svg" alt="" srcset="">
                 <h2>Seguros patrimoniales</h2>
                 <ul>
                     <li>Seguro automotor</li>
@@ -51,8 +53,8 @@
                     <li>Responsabilidad civil profesionales</li>
                 </ul>
             </div>
-            <div>
-                <img src="images/heart-pulse.svg" alt="" srcset="">
+            <div class="card">
+                <img class="card-icon" src="images/heart-pulse.svg" alt="" srcset="">
                 <h2>Seguros de vida</h2>
                 <ul>
                     <li>Seguro de vida</li>
@@ -65,8 +67,8 @@
                     <li>Seguro escolar</li>
                 </ul>
             </div>
-            <div>
-                <img src="images/truck.svg" alt="" srcset="">
+            <div class="card">
+                <img class="card-icon" src="images/truck.svg" alt="" srcset="">
                 <h2>Caución</h2>
                 <ul>
                     <li>Seguro de transporte</li>
@@ -75,8 +77,8 @@
                     <li>Seguro para construcción y montaje</li>
                 </ul>
             </div>
-            <div>
-                <img src="images/person-lock.svg" alt="" srcset="">
+            <div class="card">
+                <img class="card-icon" src="images/person-lock.svg" alt="" srcset="">
                 <h2>Obligatorios</h2>
                 <ul>
                     <li>ART (Riesgos de trabajo)</li>
@@ -86,24 +88,28 @@
             </div>
         </div>
     </section>
-    <section id="preguntas-frecuentes">
+    <section>
         <hgroup class= "separator" id="scroll-preguntas">
             <h2>Preguntas frecuentes</h2>
         </hgroup>
-        <div>
-            <h3>¿Quién soy?</h3>
-            <p>Mi nombre es Patricia Arguello y soy una productora de seguros con una muchos años de experiencia en el rubro.</h3>
-        </div>
-        <div>
-            <h3>¿Qué es una productora de seguros?</h3>
-            <p>Una productora de seguros es una intermediaria entre el asegurado y las compañías.</h3>
-        </div>
-        <div>
-            <h3>¿Por qué elegir una productora de seguros?</h3>
-            <p>Porque te brinda asesoramiento, gestión de siniestros y respuestas inmediatas a tus inquietudes.</h3>
-        </div>
-        <div>
-            <h3>¿Qué hago en caso de siniestro?</h3>
+
+        <details class="preguntas-frecuentes">
+            <summary>¿Quién soy?</summary>
+            <p>Mi nombre es Patricia Arguello y soy una productora de seguros con muchos años de experiencia en el rubro.</p>
+        </details>
+
+        <details class="preguntas-frecuentes">
+            <summary>¿Qué es una productora de seguros?</summary>
+            <p>Una productora de seguros es una intermediaria entre el asegurado y las compañías.</p>
+        </details>
+
+        <details class="preguntas-frecuentes">
+            <summary>¿Por qué elegir una productora de seguros?</summary>
+            <p>Porque te brinda asesoramiento, gestión de siniestros y respuestas inmediatas a tus inquietudes.</p>
+        </details>
+
+        <details class="preguntas-frecuentes">
+            <summary>¿Qué hago en caso de siniestro?</summary>
             <ol>
                 <li><p>Mantener la calma y no retirarse del lugar del accidente.<p></li>
                 <li><p>Si hay lesionados, llamar a la ambulancia.</p></li>
@@ -111,7 +117,8 @@
                 <li><p>Sacar fotos en las que se vean los daños y tu patente.</p></li>
                 <li><p>Comunicar a tu productora de seguros la ocurrencia del siniestro.</p></li>
             </ol>
-        </div>
+        </details>
+
     </section>
     <section>
         <div class="separator" id="scroll-aseguradoras">
@@ -130,8 +137,8 @@
     </section>
     <footer>
         <h3>Podés contactarte conmigo a través de los siguientes medios:</h3>
-        <a href="tel:1568683250"><p>Celular: +541568683250</p></a>
-        <a href="mailto:patri_ar06@hotmail.com"><p>E-Mail: patri_ar06@hotmail.com</p></a>
+        <p>Celular:</p><a href="tel:1568683250">1168683250</a>
+        <p>E-Mail:</p><a href="mailto:patri_ar06@hotmail.com">patri_ar06@hotmail.com</a>
     </footer>
 
     <!-- Keep it last -->
